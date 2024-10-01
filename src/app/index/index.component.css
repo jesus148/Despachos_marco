@@ -1,0 +1,33 @@
+
+/* fondo */
+
+#fondo-login {
+  height: 100vh;
+  /* background-image: url('../../../../public/assets/images/fondo.jpg'); */
+  background-image: url('../../../public/assets/images/fondo.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+
+/* contenedor  */
+.contenedor_2{
+  border-radius: 15px 50px;
+}
+
+
+
+/* title login  */
+.contenedor_2 h4{
+  font-family: "New Amsterdam", sans-serif;
+}
+
+.btn{
+  width: 900px;
+  margin-top: 400px;
+}
+
+
+:host ::ng-deep .p-button{
+width: 120px;
+}

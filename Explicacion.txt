@@ -1,0 +1,9 @@
+
+
+1.  instalacion de dependias
+
+   https://primeng.org/
+
+https://primeflex.org/installation
+
+https://primeng.org/icons
