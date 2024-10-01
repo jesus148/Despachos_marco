@@ -1,0 +1,43 @@
+
+
+/* parte de arriba  estilos para header */
+:host ::ng-deep .p-menubar {
+  background-color: #fff;
+  height: 65px;
+}
+
+:host ::ng-deep .p-menubar {
+  font-family: "New Amsterdam", sans-serif;
+  font-size: 20px;
+}
+
+
+
+/* contendor  */
+.container{
+  background-color: #e5e6f0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0 ;
+  box-sizing: border-box;
+}
+
+
+
+
+/* desktop barra de nav*/
+
+:host ::ng-deep .p-menubar .p-menubar-root-list {
+  position: absolute;
+  right:6%;
+  top: 14%;
+  transform: translateX(-8%) translateY(-120%);
+  font-family: "New Amsterdam", sans-serif;
+  font-size: 22px;
+}
+
+
+:host ::ng-deep .p-divider-content {
+  background-color: red;
+}

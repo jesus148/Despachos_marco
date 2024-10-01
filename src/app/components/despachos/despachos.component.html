@@ -1,11 +1,81 @@
-<!--
 
 
-<p-menubar [model]="items">
-  <ng-template pTemplate="start">
-      <img src="assets/showcase/images/primeng.svg" height="40" class="mr-2">
-  </ng-template>
-  <ng-template pTemplate="end">
-      <input type="text" pInputText placeholder="Search">
-  </ng-template>
-</p-menubar> -->
+<div class="container">
+  <div class="container_1 p-4">
+    <p-menubar [model]="items">
+      <ng-template pTemplate="start">
+        <div class="hidden md:flex md:mb-2 md:gap-3 md:justify-content-end ">
+
+          <img src="assets/images/LogoMp2.png" height="36px" class="">
+
+        </div>
+      </ng-template>
+      <ng-template pTemplate="end">
+        <p-avatar
+        icon="pi pi-user"
+        styleClass="mr-2"
+        size="large"
+        [style]="{ 'background-color': '#ece9fc', color: '#2a1261' }"
+        shape="circle" />
+
+      </ng-template>
+
+
+    </p-menubar>
+  </div>
+
+
+  <div class="grid bg-white  mx-5">
+    <div class="col-4 bg-blue-800" style="  border-right: 3px solid greenyellow;">
+      <h4>Ingeniero Marco Peruana</h4>
+    </div>
+    <div class="col-8">
+
+    </div>
+  </div>
+
+
+  <div class="mx-6 mt-4">
+    <div class="card">
+      <p-table
+          [value]="products"
+          styleClass="p-datatable-striped"
+          [tableStyle]="{'min-width': '50rem'}">
+              <ng-template pTemplate="header">
+                  <tr>
+                      <th>Tipo_Despacho</th>
+                      <th>-</th>
+                      <th>Dirección_de_entrega</th>
+                      <th>F_Entrega</th>
+                      <th>Código</th>
+                      <th>Descripción_Producto</th>
+                      <th></th>
+                  </tr>
+              </ng-template>
+              <ng-template pTemplate="body" let-product >
+                  <tr>
+                    <td>
+                      <p-dropdown
+                      [options]="TiposDespachos"
+                      optionLabel="name"
+                      placeholder="Select a City"
+                      optionLabel="detalle"/>
+                  </td>
+                    <td>{{product.name }}</td>
+                    <td>{{product.job }}</td>
+                    <td>{{product.job }}</td>
+                    <td>{{product.job }}</td>
+                    <td>{{product.job }}</td>
+                    <td>{{product.job }}</td>
+                    <td></td>
+                  </tr>
+              </ng-template>
+      </p-table>
+  </div>
+  </div>
+
+
+
+
+</div>
+
