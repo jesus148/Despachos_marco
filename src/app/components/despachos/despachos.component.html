@@ -17,34 +17,37 @@
         size="large"
         [style]="{ 'background-color': '#ece9fc', color: '#2a1261' }"
         shape="circle" />
-
       </ng-template>
-
-
     </p-menubar>
   </div>
 
 
-  <div class="grid bg-white  mx-5">
-    <div class="col-4 bg-blue-800" style="  border-right: 3px solid greenyellow;">
-      <h4>Ingeniero Marco Peruana</h4>
+  <div class="container_2 grid bg-white h-5rem mx-5 justify-content-center align-content-center">
+    <div class="col-10">
+      <h2>Vendedor</h2>
     </div>
-    <div class="col-8">
+    <div class="col-2 text-right">
 
+
+      <div class="h-4rem bg-blue-500 mb-1 mt-2 flex justify-content-center align-items-center">
+        <p class=" text-white ">
+          $. 2300.403
+        </p>
+      </div>
     </div>
   </div>
 
 
-  <div class="mx-6 mt-4">
+  <div class="container_3 mx-6 mt-4">
     <div class="card">
       <p-table
           [value]="products"
           styleClass="p-datatable-striped"
-          [tableStyle]="{'min-width': '50rem'}">
+          [tableStyle]="{'min-width': '80rem'}">
               <ng-template pTemplate="header">
                   <tr>
                       <th>Tipo_Despacho</th>
-                      <th>-</th>
+                      <th>Cliente/Almacen de Destino/OF</th>
                       <th>Dirección_de_entrega</th>
                       <th>F_Entrega</th>
                       <th>Código</th>
@@ -66,8 +69,37 @@
                     <td>{{product.job }}</td>
                     <td>{{product.job }}</td>
                     <td>{{product.job }}</td>
-                    <td>{{product.job }}</td>
-                    <td></td>
+                    <td class="flex">
+                      <div>
+
+                        @if(product.job ===  'Astronaut'){
+
+                            <p-button size="small" icon="pi pi-money-bill"
+                            severity="success" pTooltip="Cantidad"   />
+
+                        }
+                      </div>
+                      <p-divider layout="vertical" />
+                      <div>
+
+                        @if(product.job ===  'Astronaut'){
+
+                          <p-button size="small" icon="pi pi-money-bill"
+                          severity="primary" pTooltip="Autorización Finanzas"    />
+
+                      }
+                      </div>
+                    <p-divider layout="vertical" />
+                    <div>
+
+                      @if(product.job ===  'Astronaut'){
+
+                        <p-button size="small" icon="pi pi-money-bill"
+                        severity="warning" pTooltip="Documentación para Mina"    tooltipPosition="left"  />
+
+                    }
+                    </div>
+                    </td>
                   </tr>
               </ng-template>
       </p-table>
@@ -75,6 +107,11 @@
   </div>
 
 
+
+  <div class="container_4 h-5rem">
+
+
+  </div>
 
 
 </div>

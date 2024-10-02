@@ -10,7 +10,8 @@ import { DividerModule } from 'primeng/divider';
 import { TableModule } from 'primeng/table';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { DropdownModule } from 'primeng/dropdown';
-
+import { ButtonModule } from 'primeng/button';
+import { TooltipModule } from 'primeng/tooltip';
 
 
 interface Despachos {
@@ -23,7 +24,7 @@ interface Despachos {
   selector: 'app-despachos',
   standalone: true,
   imports: [MenubarModule, BadgeModule, AvatarModule, InputTextModule, RippleModule, CommonModule, DividerModule , TableModule,
-    CommonModule, ReactiveFormsModule, DropdownModule],
+    CommonModule, ReactiveFormsModule, DropdownModule, ButtonModule],
   templateUrl: './despachos.component.html',
   styleUrl: './despachos.component.css'
 })
@@ -65,7 +66,22 @@ export class DespachosComponent {
     job: 'Astronaut',
     year_joined: 1959,
     missions: ['MA-7']
-  }];
+  },
+  {
+    id: 154,
+    name: 'M. Scott Carpenter',
+    job: 'Astronaut',
+    year_joined: 1959,
+    missions: ['MA-7']
+  },
+  {
+    id: 154,
+    name: 'M. Scott Carpenter',
+    job: 'Astronaut',
+    year_joined: 1959,
+    missions: ['MA-7']
+  }
+];
 
 
 
